@@ -1,0 +1,62 @@
+@import 'styles/variables.scss';
+
+.app {
+  margin: 80px auto $base-margin auto;
+  padding: 0 2 * $base-padding 2 * $base-padding 2 * $base-padding;
+
+  width: 960px;
+  background-color: $white;
+}
+
+.header {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.5em;
+  font-weight: bold;
+  border-bottom: 2px solid #EDEDED;
+}
+
+.header-img {
+  position: relative;
+  transform: translateY(-50%);
+  height: 130px;
+  border-radius: 50%;
+}
+
+.header-h3 {
+  color:#373A3F;
+  margin-top: -73px;
+}
+
+.article-h1 {
+  line-height: 2.5em;
+  color: #EA7366;
+}
+
+.article-p {
+  line-height: 1.5em;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-info {
+  margin-bottom: 10px;
+  width: 92%;
+  background-color: #EDEDED;
+}
+
+.education-year {
+  color: #373A3F;
+}
+
+.education-info-h3 {
+  line-height: 1.5em;
+  color: #373A3F;
+}
+
+.education-info-p {
+  line-height: 2em;
+}
