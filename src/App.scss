@@ -1,16 +1,32 @@
 @import 'styles/variables.scss';
 
 .header {
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   background-color: #001528;
 }
+.nav {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin-left: 60px;
+  text-align: center;
+}
 
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+}
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   color: #5B5555;
   background-color: #F1F2F6;

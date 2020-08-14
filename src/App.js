@@ -17,9 +17,9 @@ class App extends Component {
       <Router>
         <header className = 'header'>
           <nav className='nav'>
-            <NavLink exact className = 'link' to="/"  activeStyle= {{textDecoration: `underline`}}>商城</NavLink>
-            <NavLink className = 'link' to="/Order" activeStyle= {{textDecoration: `underline`}}>订单</NavLink>
-            <NavLink className = 'link' to="/Add" activeStyle= {{textDecoration: `underline`}}>添加商品</NavLink>
+            <NavLink exact className = 'link' to="/"  activeStyle= {{backgroundColor: 'blue'}}>商城</NavLink>
+            <NavLink className = 'link' to="/Order" activeStyle= {{backgroundColor: 'blue'}}>订单</NavLink>
+            <NavLink className = 'link' to="/Add" activeStyle= {{backgroundColor: 'blue'}}>添加商品</NavLink>
           </nav>
         </header>
         <Switch>
