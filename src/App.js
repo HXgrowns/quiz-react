@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import './App.scss';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   NavLink
 } from "react-router-dom";
 import Add from "./component/Add";
@@ -27,6 +27,9 @@ class App extends Component {
           <Route exact path='/Add' component={Add} />
           <Route exact path='/Order' component={Order} />
         </Switch>
+        <footer className = 'footer'>
+          TW Mail @2018 Created by ForCheng
+        </footer>
       </Router>
     );
   }
