@@ -3,10 +3,12 @@ import { Route, Switch, Link } from 'react-router-dom';
 import "../styles/add.scss";
 class Add extends Component {
     state = {
-        name: "",
-        price: 0,
-        unit: "",
-        img: "",
+        product: {
+            name: "",
+            price: 0,
+            unit: "",
+            img: "",
+        }
     }
 
     handleInput = (field, e) => {
@@ -44,7 +46,7 @@ class Add extends Component {
                     }} name="img" placeholder="图片"></input>
 
                     <input onClick={this.handleSubmit}
-                        disabled={(!this.state.name || !(this.state.price > 0) || !this.state.unit || !this.state.img)}
+                        disabled={(!this.state.product.name || !(this.state.product.price > 0) || !this.state.product.unit || !this.state.product.img)}
                         className="submit" type="submit" value="提交"></input>
                 </section>
             </form>
