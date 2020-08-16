@@ -1,0 +1,40 @@
+.form {
+    margin: auto;
+    width: 90%;
+    height: 430px;
+    background-color: white;
+}
+
+.form-content {
+    margin: auto;
+    width: 90%;
+}
+.form-content p {
+   color: red; 
+   line-height: 3em;
+}
+
+.form-content label {
+    color: black;
+    line-height: 2em;
+}
+
+.form-content input {
+    margin: auto;
+    line-height: 2em;
+    margin-bottom: 15px;
+    width: 99%;
+}
+
+.form-content .submit {
+    width: 50px;
+    color: white;
+    border: none;
+    background-color: #2E95F7;
+}
+
+.form h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}

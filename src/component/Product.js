@@ -11,8 +11,10 @@ class Product extends Component {
         return (
             <section className='product'>
                 <img className="product-img" src={product.img}></img>
-                <p className='product-name'>{product.name}</p>
-                <p className='product-price'>单价：{product.price}元/{product.unit}</p>
+                <section className="name-price">
+                    <p className='product-name'>{product.name}</p>
+                    <p className='product-price'>单价：{product.price}元/{product.unit}</p>
+                </section>
                 <button className="add"><img className="add-img" src={AddImg}></img></button>
             </section>
         );

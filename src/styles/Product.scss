@@ -1,12 +1,18 @@
 .product {
-    margin-top: 20px;
-    width: 120px;
-    border: 1px solid #ddd;
+    text-align: center;
+    width: 160px;
+    height: 220px;
+    // border: 1px solid #ddd;
+    border: 1px solid red;
 }
 
 .product-img {
-    margin: 0 auto;
+    margin: 5px auto;
     width: 120px;
+}
+
+.name-price {
+    text-align: left;
 }
 
 .product-name {
@@ -21,8 +27,6 @@
 }
 
 .add {
-    margin-top: 10px;
-    margin-bottom: 20px;
     width: 120px;
     text-align: right;
     border: none;
