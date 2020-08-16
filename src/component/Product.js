@@ -5,13 +5,15 @@ import AddImg from '../assets/add.png';
 import "../styles/Product.scss";
 
 class Product extends Component {
+
     render() {
+        const {product} = this.props;
         return (
             <section className='product'>
-                <img className = "product-img" src = {Ke}></img>
-                <p className = 'product-name'>可乐1</p>
-                <p className = 'product-price'>单价：1元/瓶</p>
-                <button className = "add"><img className = "add-img" src = {AddImg}></img></button>
+                <img className="product-img" src={product.img}></img>
+                <p className='product-name'>{product.name}</p>
+                <p className='product-price'>单价：{product.price}元/{product.unit}</p>
+                <button className="add"><img className="add-img" src={AddImg}></img></button>
             </section>
         );
     }
