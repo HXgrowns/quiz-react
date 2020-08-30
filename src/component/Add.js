@@ -18,7 +18,28 @@ class Add extends Component {
     }
 
     handleSubmit = () => {
-        alert(this.state.price);
+        let product = {
+            name: this.state.name,
+            img: this.state.img,
+            unit: this.state.unit,
+            price: this.state.price,
+        };
+        fetch("http://127.0.0.1:8080/product", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                'Accept': 'application/json;charset=UTF-8',
+            },
+            body: JSON.stringify(product),
+        }).then((response) => {
+            if (response.status === 201) {
+                alert("submitted success");
+                return response.json();
+            }
+            return Promise.reject(new Error(response.status + response.statusText));
+        }).catch((err) => {
+            console.error(err);
+        });
     }
     render() {
         return (
@@ -46,7 +67,8 @@ class Add extends Component {
                     }} name="img" placeholder="图片"></input>
 
                     <input onClick={this.handleSubmit}
-                        disabled={(!this.state.product.name || !(this.state.product.price > 0) || !this.state.product.unit || !this.state.product.img)}
+                        disabled={(!this.state.name || !(this.state.price > 0) 
+                            || !this.state.unit || !this.state.img)}
                         className="submit" type="submit" value="提交"></input>
                 </section>
             </form>

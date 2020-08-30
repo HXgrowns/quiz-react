@@ -22,6 +22,7 @@ class Home extends Component {
             }
             return Promise.reject(new Error(response.status + response.statusText));
         }).then((data) => {
+            console.log(data);
             this.setState({
                 products: data,
             });
